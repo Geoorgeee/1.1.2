@@ -14,7 +14,6 @@ import java.util.List;
 import static jm.task.core.jdbc.util.Util.getConnection;
 
 public class UserServiceImpl implements UserService {
-    //UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
     private UserDao userDaoJDBC = new UserDaoJDBCImpl();
 
     @Override

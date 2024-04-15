@@ -18,21 +18,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void createUsersTable() {
-        try {
-            userDaoJDBC.createUsersTable();
-        } catch (SQLException e) {
-            throw new RuntimeException("не получилось создать таблицу юзеров");
-        }
+        userDaoJDBC.createUsersTable();
 
     }
 
     @Override
     public void dropUsersTable() {
-        try {
-            userDaoJDBC.dropUsersTable();
-        } catch (SQLException e) {
-            throw new RuntimeException("не получилось удалить таблицу юзеров");
-        }
+        userDaoJDBC.dropUsersTable();
 
     }
 
